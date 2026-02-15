@@ -443,7 +443,7 @@ button {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    border: 5px solid rgba(204, 167, 47, 0.3); /* เพิ่มขอบทองบางๆ */
+    border: 5px solid rgb(180 61 241 / 30%); /* เพิ่มขอบทองบางๆ */
 }
 
 /* ปรับขนาดตัวอักษรให้เล็กลงนิดหน่อยเพื่อให้พอดีกับกรอบที่แคบลง */
@@ -563,7 +563,7 @@ button {
 
 /* ไอคอนสีทอง */
 .contact-item i {
-    color: #d4af37;
+    color: #8a37d4;
     font-size: 20px;
     margin-right: 15px;
 }
@@ -594,9 +594,9 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #b79b42;
+    border: 2px solid #8a37d4;
     border-radius: 50%;
-    color: #ad9034;
+    color: #8a37d4;
     font-size: 20px;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -604,12 +604,63 @@ button {
 
 /* เอฟเฟกต์ตอนเอาเมาส์วางที่ปุ่ม Social */
 .social-links-gold a:hover {
-    background: linear-gradient(to right, #bf953f, #fcf6ba, #aa771c);
+    background: linear-gradient(to right, #aa97d7, #9890ad, #432d99);
     color: #000; /* เปลี่ยนไอคอนเป็นสีดำตอน hover ให้ดูเด่น */
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
     border-color: transparent;
 }
+
+/* Purple Gradient Heading */
+.purple-text {
+    background: linear-gradient(to right, #5d2a8e, #9b59b6, #8e44ad, #5d2a8e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 56px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+}
+
+/* Purple Divider Line */
+.title-line-purple {
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(to right, #5d2a8e, #9b59b6, #5d2a8e);
+    margin: 10px auto 25px auto;
+    border-radius: 50px;
+}
+
+/* Purple Subtitle */
+.premium-subtitle-purple {
+    color: #8e44ad !important;
+    font-size: 22px !important;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+/* Purple Contact Box */
+.contact-info-wrapper-purple {
+    margin-top: 40px;
+    padding: 30px;
+    background: rgba(93, 42, 142, 0.05); /* Soft purple tint */
+    border-radius: 15px;
+    border: 1px solid rgba(93, 42, 142, 0.2);
+}
+
+/* Icon and Text Colors */
+.purple-icon {
+    color: #5d2a8e !important;
+}
+
+.purple-contact-text {
+    color: #2d0a63 !important; /* Deep purple */
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 10px;
+}
+
 
 .asked_main {
     /* Increase the top and bottom padding significantly */
@@ -938,7 +989,24 @@ color: #6e6d70;
 
 .testimonial {
      padding: 60px 0;
-     background: #f5f4f5;
+     /* ใช้สีม่วงลาเวนเดอร์อ่อนไล่ไปหาขาวนวล */
+     background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 50%, #f3e5f5 100%);
+     position: relative;
+     overflow: hidden;
+}
+
+/* ปรับแถบโค้งให้เป็นสีขาวที่ดูฟุ้งกระจายมากขึ้น */
+.testimonial::before {
+    content: "";
+    position: absolute;
+    top: -150px;
+    left: -100px;
+    width: 150%;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.4); /* เพิ่มความชัดของสีขาว */
+    border-radius: 50%;
+    transform: rotate(-5deg);
+    pointer-events: none;
 }
 
 .testimonial .titlepage h2 {
@@ -965,7 +1033,7 @@ color: #6e6d70;
 
 .item {
      text-align: center;
-     background: #dba01b99;
+     background: #2603e594;
      border-radius: 20px;
      padding: 20px;
 }
