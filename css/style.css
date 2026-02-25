@@ -38,9 +38,9 @@ html {
 
 body {
      color: #666666;
-     font-size: 14px;
+     font-size: 17px;
      font-family: 'Poppins', sans-serif;
-     line-height: 1.80857;
+     line-height: 3;
      font-weight: normal;
 }
 
@@ -129,7 +129,7 @@ ol {
 p {
      margin: 0px;
      font-weight: 300;
-     font-size: 15px;
+     font-size: 25px;
      line-height: 24px;
 }
 
@@ -282,9 +282,14 @@ button {
       box-shadow: 0 0 30px rgba(212, 175, 55, 0.6); /* เปลี่ยนออร่าเป็นสีทอง */
    }
 
-   .management-container {
-    margin-top: 20px;
-    text-align: left; /* หรือ center ตามดีไซน์หน้าเว็บของคุณ */
+    @media (max-width: 767px) {
+    .management-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers items horizontally */
+        text-align: center;  /* Centers text inside management-note */
+        width: 100%;
+    }
 }
 
 
@@ -316,6 +321,7 @@ button {
     box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    margin: 10px auto;
 }
 
 .logo-text {
@@ -731,6 +737,7 @@ ul.costomer li a span {color: #5502bb;}
      padding: 40px 40px 40px 40px;
 }
 
+
 .logo a {
      font-size: 40px;
      font-weight: bold;
@@ -1140,7 +1147,7 @@ $grey: #999;
 }
 
 .content {
-     font: 1em 'News Cycle', sans-serif;
+     font: 1em 'News Cycle';
      padding: 1%;
      p {
           margin-bottom: 1%;
